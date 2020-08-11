@@ -1,0 +1,11 @@
+{
+    "AppSyncApiName": "rcawstodo",
+    "DynamoDBBillingMode": "PAY_PER_REQUEST",
+    "DynamoDBEnableServerSideEncryption": false,
+    "AuthCognitoUserPoolId": {
+        "Fn::GetAtt": [
+            "authrcawstodo9981dc9c",
+            "Outputs.UserPoolId"
+        ]
+    }
+}
