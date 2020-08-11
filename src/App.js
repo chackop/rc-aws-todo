@@ -26,11 +26,14 @@ function App() {
   Auth.currentAuthenticatedUser({
     bypassCache: false,
   })
-
-  const todo = { name: 'app', description: 'new todo' };
-  const newTodo = API.graphql(
-    graphqlOperation(mutations.createTodo, { input: todo })
-  );
+    .then(function (user) {
+      console.log('User: ' + JSON.stringify(user));
+      const todo = { name: user['username'], description: 'new todo' };
+      const newTodo = API.graphql(
+        graphqlOperation(mutations.createTodo, { input: todo })
+      );
+    })
+    .catch((err) => console.log(err));
 
   return (
     <div className="App">
