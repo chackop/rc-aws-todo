@@ -1,0 +1,20 @@
+{
+    "dev": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-rcawstodo-dev-225917-authRole",
+            "UnauthRoleArn": "arn:aws:iam::606824492459:role/amplify-rcawstodo-dev-225917-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::606824492459:role/amplify-rcawstodo-dev-225917-authRole",
+            "Region": "eu-west-2",
+            "DeploymentBucketName": "amplify-rcawstodo-dev-225917-deployment",
+            "UnauthRoleName": "amplify-rcawstodo-dev-225917-unauthRole",
+            "StackName": "amplify-rcawstodo-dev-225917",
+            "StackId": "arn:aws:cloudformation:eu-west-2:606824492459:stack/amplify-rcawstodo-dev-225917/e7ca0440-dc1d-11ea-afa5-064d74357b0e",
+            "AmplifyAppId": "d24a3rixczlge8"
+        },
+        "categories": {
+            "auth": {
+                "rcawstodo9981dc9c": {}
+            }
+        }
+    }
+}
